@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    	<dimen name="textsize">40sp</dimen>
+    	<dimen name="scoretextsize">25sp</dimen>
+    	<dimen name="strokesize">8dp</dimen>
+    	<dimen name="fillsize">4dp</dimen>
+</resources>
