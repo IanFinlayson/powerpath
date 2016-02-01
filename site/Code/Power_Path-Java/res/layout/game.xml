@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:baselineAligned="false"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal" 
+    android:weightSum="100"  
+    android:background="#41352e"
+    >    
+
+    <LinearLayout
+        android:id="@+id/l_left"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="7"
+        android:weightSum="100" 
+        android:background="#41352e"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:text=""
+             android:layout_weight="10"
+             />
+        
+        <ImageButton
+            android:id="@+id/b_quit"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/b_quit"
+            android:contentDescription="Quit"           
+             />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:text=""
+             android:layout_weight="10"
+             />
+        
+        <ImageButton
+            android:id="@+id/b_clear"
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/b_clear"                     
+            android:contentDescription="Clear"        
+             />
+        
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:text=""
+             android:layout_weight="15"
+             />
+        
+        <TextView
+             android:id="@+id/tv_score"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/scoretextsize"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+             />
+
+        <Chronometer
+        android:id="@+id/chronometer"
+        android:format="%s"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="@dimen/textsize"
+        android:background="#212421"
+        android:textColor="#FFFFFF"/>              
+        
+           
+    </LinearLayout>
+	
+    <LinearLayout
+        android:id="@+id/l_mid"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@drawable/bg_game_mid"
+        android:orientation="vertical" >
+        </LinearLayout>
+        
+   	<LinearLayout
+	    android:id="@+id/l_right"
+	    android:layout_width="0dp"
+	    android:layout_weight="92"
+    	android:layout_height="fill_parent" 	
+	    android:orientation="vertical"
+	    android:background="@drawable/bg_game_right" 
+	    >        
+		</LinearLayout>
+
+	
+</LinearLayout>
